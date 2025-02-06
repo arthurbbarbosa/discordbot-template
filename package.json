@@ -1,6 +1,6 @@
 {
   "name": "discord_bot_template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight and optimized Discord Bot",
   "main": "./src/index.js",
   "author": "Arthur Barbosa",
