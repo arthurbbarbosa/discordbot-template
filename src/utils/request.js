@@ -5,8 +5,8 @@ import { request as http_request } from 'node:https'
  * @param {'GET' | 'POST' | 'PATCH' | 'PUT' | 'DELETE'} method
  * @param {string} host
  * @param {string} path
- * @param {any?} data
- * @returns {Promise<any>}
+ * @param {string | Object} [data='']
+ * @returns {Promise<Object>}
  */
 export function request(method, host, path, data = '') {
   return new Promise((resolve) => {

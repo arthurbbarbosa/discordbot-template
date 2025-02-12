@@ -2,7 +2,7 @@ import { discord_uri } from '../utils/endpoints.js'
 import { request } from '../utils/request.js'
 
 /**
- * 
+ * Ready Discord Event
  * @param {import('../infra/client.js').Client} client 
  * @param {Object} param1 
  * @returns {Promise<void>}

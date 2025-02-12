@@ -1,5 +1,5 @@
 /**
- *
+ * Interaction Create Discord Event
  * @param {import('../infra/client.js').Client} client
  * @param {Object} interaction
  * @returns {Promise<void>}

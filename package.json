@@ -1,21 +1,16 @@
 {
   "name": "discord_bot_template",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A lightweight and optimized Discord Bot",
   "main": "./src/index.js",
   "author": "Arthur Barbosa",
   "license": "MIT",
   "private": true,
   "type": "module",
-  "scripts": {
-    "lint": "eslint ./"
-  },
   "dependencies": {
     "ws": "^8.18.0"
   },
   "devDependencies": {
-    "dotenv": "^16.4.7",
-    "eslint": "^9.19.0",
-    "eslint-config-arthurbbarbosa": "^1.1.4"
+    "dotenv": "^16.4.7"
   }
 }

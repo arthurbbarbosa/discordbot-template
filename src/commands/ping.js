@@ -9,7 +9,7 @@ export const ping_options = {
 }
 
 /**
- *
+ * Ping Example Command Discord Event
  * @param {import('../infra/client.js').Client} _client
  * @param {Object} interaction
  */
