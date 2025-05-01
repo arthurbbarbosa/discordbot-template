@@ -1,0 +1,14 @@
+{
+  "name": "discord_bot_template",
+  "version": "2.0.0",
+  "description": "A lightweight and optimized Discord Bot",
+  "main": "./src/index.js",
+  "author": "Arthur Barbosa",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ws": "^8.18.1"
+  }
+}
