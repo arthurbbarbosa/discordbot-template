@@ -9,17 +9,15 @@ export class Client extends Gateway {
   constructor({ token, intents }) {
     super(token, intents)
 
+    this.startTime = Date.now()
+
     readdirSync('./src/events').forEach((path) =>
       this.on(
         path.split('.')[0],
-        async(payload) => require(`../events/${path}`)
+        (payload) => require(`../events/${path}`)
           .default(this, payload)
       )
     )
-  }
-
-  get startTime() {
-    return Date.now()
   }
 
   get commands() {
