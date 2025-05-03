@@ -12,19 +12,15 @@ export class Client extends Gateway {
     this.startTime = Date.now()
 
     readdirSync('./src/events').forEach((path) =>
-      this.on(
-        path.split('.')[0],
-        (payload) => require(`../events/${path}`)
-          .default(this, payload)
+      this.on(path.split('.')[0], (payload) =>
+        require(`../events/${path}`).default(this, payload)
       )
     )
   }
 
   get commands() {
-    return readdirSync('./src/commands').map((path) =>
-      require(`../commands/${path}`)
-        .commandOptions
+    return readdirSync('./src/commands').map(
+      (path) => require(`../commands/${path}`).commandOptions
     )
   }
 }
-

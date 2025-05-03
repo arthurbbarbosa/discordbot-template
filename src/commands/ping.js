@@ -8,14 +8,10 @@ export const commandOptions = {
 }
 
 export const commandHandler = (client, { id, token }) => {
-  request(
-    'POST',
-    `/interactions/${id}/${token}/callback`,
-    {
-      type: 4,
-      data: {
-        content: 'Pong!'
-      }
+  request('POST', `/interactions/${id}/${token}/callback`, {
+    type: 4,
+    data: {
+      content: 'Pong!'
     }
-  )
+  })
 }
